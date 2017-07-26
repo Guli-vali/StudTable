@@ -1,0 +1,48 @@
+{% extends parent_template|default:"datatable/base_datatable.html" %}
+{% block content %}
+    <table class="table is-bordered is-striped">
+        <caption>
+            <b>Список студентов для группы {{ title }}:</b>
+        </caption>
+
+        <thead>
+            <tr>
+                <th><abbr title="Full Name">ФИО</abbr></th>
+                <th><abbr title="Birthday">Дата рождения</abbr></th>
+                <th><abbr title="Student Id">Номер студ. билета</abbr></th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th><abbr title="Full Name">ФИО</abbr></th>
+                <th><abbr title="Birthday">Дата рождения</abbr></th>
+                <th><abbr title="Student Id">Номер студ. билета</abbr></th>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            {% for student in students %}
+            <tr>
+                <th><a href="{{ student.get_absolute_url }}">{{ student.full_name }}</a>
+                    {% if perms.datatable.change_student %}
+                        <a class="button is-light" href="{{ student.get_update_url }}">Update</a>
+                    {% endif %}
+                    {% if perms.datatable.delete_student %}
+                        <a class="button is-danger" href="{{ student.get_delete_url }}">Delete</a></th>
+                    {% endif %}
+                <td>{{ student.birthday }}</td>
+                <td>{{ student.id }}</td>
+            </tr>
+            {% empty %}
+                <p><em>No Students Available</em></p>
+            {% endfor %}
+            {% if perms.datatable.add_student %}
+            <tr>
+                <th><a class="button is-dark" href="{% url 'datatable_student_create' %}">Add Student</a></th>
+                <td></td>
+                <td></td>
+            </tr>
+            {% endif %}
+        </tbody>
+    </table>
+{% endblock %}

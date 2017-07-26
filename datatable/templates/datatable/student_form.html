@@ -1,0 +1,11 @@
+{% extends parent_template|default:"datatable/base_datatable.html" %}
+
+{% block content %}
+
+<form action="{{ datatable_student_create }}"
+      method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+     <p><input type="submit" value="Отправить" class="button"/></p>
+</form>
+{% endblock %}

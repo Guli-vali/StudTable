@@ -1,0 +1,146 @@
+[
+{
+    "model": "datatable.studygroup",
+    "pk": 1,
+    "fields": {
+        "title": "\u0424\u041c\u041f-32",
+        "slug": "\u0444\u043c\u043f-32",
+        "head": "\u042e\u043b\u0438\u044f \u041a\u043e\u043d\u043d\u043e\u0432\u0430"
+    }
+},
+{
+    "model": "datatable.studygroup",
+    "pk": 3,
+    "fields": {
+        "title": "\u0424\u041c\u041f-33",
+        "slug": "\u0444\u043c\u043f-33",
+        "head": "\u041e\u043b\u044f \u0414\u0443\u043d\u0430\u0435\u0432\u0441\u043a\u0430\u044f"
+    }
+},
+{
+    "model": "datatable.studygroup",
+    "pk": 4,
+    "fields": {
+        "title": "\u0424\u041c\u041f-34",
+        "slug": "\u0444\u043c\u043f-34",
+        "head": "\u0410\u043b\u044c\u0431\u0438\u043d\u0430 \u041c\u043e\u0440\u043e\u0437\u0435\u043d\u043a\u043e"
+    }
+},
+{
+    "model": "datatable.studygroup",
+    "pk": 6,
+    "fields": {
+        "title": "\u0424\u041c\u041f-35",
+        "slug": "\u0444\u043c\u043f-35",
+        "head": "\u0412\u0430\u0441\u044f \u041e\u0431\u043b\u043e\u043c\u043e\u0432"
+    }
+},
+{
+    "model": "datatable.studygroup",
+    "pk": 9,
+    "fields": {
+        "title": "\u0424\u041c\u041f-31",
+        "slug": "\u0444\u043c\u043f-31",
+        "head": "\u042e\u043b\u0438\u044f \u0417\u0438\u043b\u0438\u043d\u0441\u043a\u0430\u044f"
+    }
+},
+{
+    "model": "datatable.student",
+    "pk": 3,
+    "fields": {
+        "full_name": "\u041c\u0435\u0440\u0435\u0444\u0438\u044f\u043d\u0441\u043a\u0438\u0439 \u0418\u043b\u044c\u044f \u041a\u043e\u043d\u0441\u0442\u0430\u043d\u0442\u0438\u043d\u043e\u0432\u0438\u0447",
+        "birthday": "1997-05-23",
+        "studygroup": 1
+    }
+},
+{
+    "model": "datatable.student",
+    "pk": 5,
+    "fields": {
+        "full_name": "\u041a\u043e\u0440\u043b\u044e\u0447\u0435\u043d\u043a\u043e \u0412\u043b\u0430\u0434\u0438\u0441\u043b\u0430\u0432 \u0412\u0430\u0441\u0438\u043b\u044c\u0435\u0432\u0438\u0447",
+        "birthday": "1999-05-24",
+        "studygroup": 3
+    }
+},
+{
+    "model": "datatable.student",
+    "pk": 6,
+    "fields": {
+        "full_name": "\u041a\u0440\u0430\u0432\u0447\u0435\u043d\u043a\u043e \u0412\u043b\u0430\u0434\u0438\u0441\u043b\u0430\u0432 \u0410\u043d\u0434\u0440\u0435\u0435\u0432\u0438\u0447",
+        "birthday": "1998-05-24",
+        "studygroup": 4
+    }
+},
+{
+    "model": "datatable.student",
+    "pk": 7,
+    "fields": {
+        "full_name": "\u041a\u0440\u0430\u0432\u0447\u0435\u043d\u043a\u043e \u0412\u043b\u0430\u0434\u0438\u0441\u043b\u0430\u0432 \u0410\u043d\u0434\u0440\u0435\u0435\u0432\u0438\u0447",
+        "birthday": "1995-04-24",
+        "studygroup": 1
+    }
+},
+{
+    "model": "datatable.student",
+    "pk": 8,
+    "fields": {
+        "full_name": "\u041c\u0430\u0441\u043b\u0438\u0435\u0432 \u0418\u043b\u044c\u044f \u0418\u0433\u043e\u0440\u0435\u0432\u0438\u0447",
+        "birthday": "1995-05-24",
+        "studygroup": 1
+    }
+},
+{
+    "model": "datatable.student",
+    "pk": 9,
+    "fields": {
+        "full_name": "\u041c\u0430\u0441\u043b\u0438\u0435\u0432 \u0418\u043b\u044c\u044f \u0418\u0433\u043e\u0440\u0435\u0432\u0438\u0447",
+        "birthday": "1995-05-24",
+        "studygroup": 4
+    }
+},
+{
+    "model": "datatable.student",
+    "pk": 10,
+    "fields": {
+        "full_name": "\u041c\u0430\u0441\u043b\u0438\u0435\u0432 \u0418\u043b\u044c\u044f \u0418\u0433\u043e\u0440\u0435\u0432\u0438\u0447",
+        "birthday": "1995-04-24",
+        "studygroup": 6
+    }
+},
+{
+    "model": "datatable.student",
+    "pk": 12,
+    "fields": {
+        "full_name": "\u041a\u043e\u0442\u044b\u0448\u0435\u0432 \u0420\u043e\u043c\u0430\u043d \u0418\u0433\u043e\u0440\u0435\u0432\u0438\u0447",
+        "birthday": "1995-04-24",
+        "studygroup": 6
+    }
+},
+{
+    "model": "datatable.student",
+    "pk": 13,
+    "fields": {
+        "full_name": "\u041a\u0440\u0430\u0432\u0447\u0435\u043d\u043a\u043e \u0412\u043b\u0430\u0434\u0438\u0441\u043b\u0430\u0432 \u0410\u043d\u0434\u0440\u0435\u0435\u0432\u0438\u0447",
+        "birthday": "1995-05-24",
+        "studygroup": 3
+    }
+},
+{
+    "model": "datatable.student",
+    "pk": 15,
+    "fields": {
+        "full_name": "\u041a\u043e\u0440\u043b\u044e\u0447\u0435\u043d\u043a\u043e \u0412\u043b\u0430\u0434\u0438\u0441\u043b\u0430\u0432 \u0412\u0430\u0441\u0438\u043b\u044c\u0435\u0432\u0438\u0447",
+        "birthday": "1995-04-24",
+        "studygroup": 1
+    }
+},
+{
+    "model": "datatable.student",
+    "pk": 20,
+    "fields": {
+        "full_name": "\u041a\u0440\u0430\u0432\u0447\u0435\u043d\u043a\u043e \u0412\u043b\u0430\u0434\u0438\u0441\u043b\u0430\u0432 \u0410\u043d\u0434\u0440\u0435\u0435\u0432\u0438\u0447",
+        "birthday": "1995-03-22",
+        "studygroup": 9
+    }
+}
+]

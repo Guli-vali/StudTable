@@ -1,0 +1,8 @@
+{% extends parent_template|default:"datatable/base_datatable.html" %}
+
+{% block content %}
+<p>ФИО:{{ student.full_name }}</p>
+<p>Дата рождения:{{ student.birthday }}</p>
+<p>Группа:{{ student.group.title }}</p>
+<p>Номер зачетной книжки:{{ student.id }}</p>
+{% endblock %}

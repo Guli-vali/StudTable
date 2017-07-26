@@ -1,0 +1,6 @@
+{% extends parent_tmplate|default:'user/base_user.html' %}
+
+{% block content %}
+    <p>You've succesfully logged out.</p>
+    {% include 'user/login_form.html' with login_button='Log Back In' %}
+{% endblock %}

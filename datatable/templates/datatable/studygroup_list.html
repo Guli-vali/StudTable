@@ -1,0 +1,55 @@
+{% extends parent_template|default:"datatable/base_datatable.html" %}
+    {% block content %}
+
+        <table class="table is-bordered is-striped">
+            <thead>
+                <tr>
+                    <th><abbr title="Ttile of group">Название</abbr></th>
+                    <th><abbr title="Num of members">Количество человек</abbr></th>
+                    <th><abbr title="Head of group">Староста</abbr></th>
+                </tr>
+            </thead>
+
+            <tfoot>
+                <tr>
+                    <th><abbr title="Ttile of group">Название</abbr></th>
+                    <th><abbr title="Num of members">Количество человек</abbr></th>
+                    <th><abbr title="Head of group">Староста</abbr></th>
+                </tr>
+            </tfoot>
+
+            <tbody>
+                {% for group in groups %}
+                <tr>
+                    <th><a href="{{ group.get_absolute_url }}">{{ group.title|title }}</a>
+                        {% if perms.datatable.change_studygroup %}
+                            <a class="button is-light" href="{{ group.get_update_url }}">Update</a>
+                        {% endif %}
+                        {% if perms.datatable.delete_studygroup %}
+                            <a class="button is-danger" href="{{ group.get_delete_url }}">Delete</a></th>
+                        {% endif %}
+                    <td>{{ group.stud_num }}</td>
+                    <td>{{ group.head }}</td>
+
+                </tr>
+                {% empty %}
+                    <p><em>No Groups Available</em></p>
+                {% endfor %}
+                {% if perms.datatable.add_studygroup or perms.datatable.add_student  %}
+                <tr>
+                    <th>
+                        {% if perms.datatable.add_studygroup %}
+                            <a class="button is-dark" href="{% url 'datatable_group_create' %}">Add group</a>
+                        {% endif %}
+                        {% if perms.datatable.add_student %}
+                            <a class="button is-dark" href="{% url 'datatable_student_create' %}">Add Student</a>
+                        {% endif %}
+                    </th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                {% endif %}
+            </tbody>
+        </table>
+
+    {% endblock %}

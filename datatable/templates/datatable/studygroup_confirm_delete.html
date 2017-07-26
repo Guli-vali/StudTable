@@ -1,0 +1,16 @@
+{% extends parent_template|default:"datatable/base_datatable.html" %}
+{% block content %}
+
+    <form
+        action="{{ studygroup.get_delete_url }}"
+        method="post">
+      {% csrf_token %}
+      <p>Are you sure you want to delete the
+        Group titled "{{ group.title }}"?</p>
+      <a href="{% url 'grouptable_group_list' %}">
+        Cancel</a>
+      <button type="submit">
+        Delete Group</button>
+    </form>
+
+{% endblock %}

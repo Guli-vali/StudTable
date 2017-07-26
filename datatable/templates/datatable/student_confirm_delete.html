@@ -1,0 +1,14 @@
+{% extends parent_template|default:"datatable/base_datatable.html" %}
+{% block content %}
+    <form
+        action="{{ studnet.get_delete_url }}"
+        method="post">
+      {% csrf_token %}
+      <p>Are you sure you want to delete the
+        Student named "{{ student.full_name }}"?</p>
+      <a href="{{ student.studygroup.get_absolute_url }}">
+        Cancel</a>
+      <button type="submit">
+        Delete Student</button>
+    </form>
+{% endblock %}
